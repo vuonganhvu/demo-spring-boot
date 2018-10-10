@@ -1,2 +1,2 @@
-CREATE TABLE USER (id INT AUTO_INCREMENT PRIMARY KEY, user_name VARCHAR(45));
-INSERT INTO USER (id, user_name) VALUES (1, 'tutorialspoint.com');
+CREATE TABLE USER (id INT AUTO_INCREMENT PRIMARY KEY, user_name VARCHAR(45), password VARCHAR(45), roles VARCHAR(45));
+INSERT INTO USER (id, user_name, password, roles) VALUES (1, 'tutorialspoint.com', '', 'ROLE_ADMIN');
