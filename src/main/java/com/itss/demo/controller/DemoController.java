@@ -1,6 +1,6 @@
 package com.itss.demo.controller;
 
-import com.itss.demo.entity.Users;
+import com.itss.demo.entity.User;
 import com.itss.demo.service.UsersService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -21,7 +21,7 @@ public class DemoController {
 
     @GetMapping("/test")
     public ResponseEntity test(){
-        Optional<Users> optional = usersService.findOne(1);
+        Optional<User> optional = usersService.findOne(1);
         System.out.println(optional.get().getUserName());
         return ResponseEntity.ok(optional.get().getUserName());
     }

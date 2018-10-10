@@ -1,6 +1,6 @@
 package com.itss.demo.service;
 
-import com.itss.demo.entity.Users;
+import com.itss.demo.entity.User;
 import com.itss.demo.repository.UsersRepository;
 import org.springframework.stereotype.Service;
 
@@ -16,7 +16,7 @@ public class UsersService {
         this.usersRepository = usersRepository;
     }
 
-    public Optional<Users> findOne(Integer id) {
+    public Optional<User> findOne(Integer id) {
         return usersRepository.findById(id);
     }
 }
