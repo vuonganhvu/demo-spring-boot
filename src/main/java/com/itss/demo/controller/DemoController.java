@@ -25,4 +25,11 @@ public class DemoController {
         System.out.println(optional.get().getUserName());
         return ResponseEntity.ok(optional.get().getUserName());
     }
+
+    @GetMapping("/test2")
+    public ResponseEntity test2() {
+        Optional<User> optional = usersService.findOne(1);
+        System.out.println(optional.get().getUserName());
+        return ResponseEntity.ok(optional.get().getUserName());
+    }
 }
